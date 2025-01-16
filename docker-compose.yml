@@ -8,12 +8,16 @@ services:
     build: ./backend
     ports:
       - "4000:4000"
-  database:
-    image: postgres:13
-    environment:
-      POSTGRES_DB: batismart
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: password
+  version: '3'
+  services:
+    postgres:
+      image: postgres:13
+      environment:
+        POSTGRES_USER: ${DB_USERNAME}
+        POSTGRES_PASSWORD: ${DB_PASSWORD}
+        POSTGRES_DB: ${DB_NAME}
+      ports:
+        - "${DB_PORT}:5432"
   redis:
     image: redis:6
   elasticsearch:

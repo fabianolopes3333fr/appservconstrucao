@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.4",
@@ -21,7 +20,7 @@
     "@eslint/eslintrc": "^3",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
-    "@types/node": "^20",
+    "@types/node": "^22.10.7",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
